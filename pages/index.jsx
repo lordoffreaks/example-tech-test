@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import { Card, Pagination } from "../components";
+import styles from "../styles/home.module.css";
 
 const Main = styled.main`
   max-width: 1200px;
@@ -12,7 +13,7 @@ export default function Home({
   results: [{ id, name, description, price, image }],
 }) {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Head>
         <title>Tech Test</title>
         <meta name="description" content="Tech Test" />
@@ -28,7 +29,7 @@ export default function Home({
           price={price}
           image={image}
         />
-        <Pagination />
+        <Pagination currentPage={5} totalPages={10} />
       </Main>
     </div>
   );

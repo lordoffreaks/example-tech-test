@@ -50,6 +50,7 @@ yarn test
 - Image Height is `200px`, full width.
 - All padding/margin seen is `10px`
 - Border Radius is `10px`
+- Box shadow `0px 0px 15px -2px #e0e0e0`
 - Price underline is `rebeccapurple`
 - Title
   - font-family `sans-serif`
