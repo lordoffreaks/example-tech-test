@@ -1,7 +1,11 @@
-export function Card() {
+export function Card({ name, description, price, image, id }) {
   return (
     <section>
-      <p>Hello World</p>
+      <div>{id}</div>
+      <div>{name}</div>
+      <div>{description}</div>
+      <div>{price}</div>
+      <div>{image}</div>
     </section>
   );
 }

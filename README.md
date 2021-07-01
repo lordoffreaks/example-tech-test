@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✨ Live Pairing Tech Test ✨
 
-## Getting Started
+## Intro 📣
 
-First, run the development server:
+- Test is 45 Min's Long
+- You don't need to finish everything
+- Work how you normally would
+  - Use google/documentation
+  - Ask questions
+  - Have fun 🎉
+
+## Goal 🏁
+
+We would like you to build a list of cards, including pagination based off the results from an API.
+
+We will be looking out for:
+
+- Clean CSS styles
+- An understanding of state and data fetching
+- Use of Test Driven Development
+
+## Where to Start 🌠
+
+Get the dev environment up and running!
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Might also be a good idea to start watching the tests!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+yarn test
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Guidelines 🕵️‍♀️
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Design 🎨
 
-## Learn More
+#### Card
 
-To learn more about Next.js, take a look at the following resources:
+TODO: Example of card
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Responsive Layout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Example of Pages Layout
 
-## Deploy on Vercel
+#### Pagination
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+TODO: Example of Pagination Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Functionality 🤖
+
+- Fetch from the API using getServerSideProps
+- Render results with 10 per page
+- Pagination should update displayed results

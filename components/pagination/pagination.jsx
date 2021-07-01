@@ -1,7 +1,4 @@
-export function Pagination() {
-  const currentPage = 5;
-  const totalPages = 10;
-
+export function Pagination({ currentPage, totalPages }) {
   return (
     <nav aria-label="Pagination">
       <ul>
