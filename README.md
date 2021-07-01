@@ -35,22 +35,46 @@ yarn test
 
 ## Guidelines 🕵️‍♀️
 
+### Functionality 🤖
+
+- Fetch from the API using getServerSideProps
+- Render results with 12 per page
+- Pagination should update displayed results
+
 ### Design 🎨
 
 #### Card
 
-TODO: Example of card
+![Example of Card](./readme-images/card-example.png)
 
-#### Responsive Layout
-
-Example of Pages Layout
+- Image Height is `200px`, full width.
+- All padding/margin seen is `10px`
+- Border Radius is `10px`
+- Price underline is `rebeccapurple`
+- Title
+  - font-family `sans-serif`
+  - font-size `1.3rem`
+  - font-weight `bold`
+- Description
+  - font-family `serif`
+  - font-size `1.1rem`
+- Price
+  - font-family `fantasy`
+  - font-size `1rem`
 
 #### Pagination
 
-TODO: Example of Pagination Design
+Pagination with `<` & `>` added and styled to buttons.
 
-### Functionality 🤖
+![Basic Pagination](./readme-images/basic-pagination.png)
 
-- Fetch from the API using getServerSideProps
-- Render results with 10 per page
-- Pagination should update displayed results
+#### Responsive Layout
+
+- Achieve a responsive layout with up to 4 cards showing at 1200px width.
+- Each card should get no smaller than 260px and no bigger than 600px.
+- Spacing is 10px
+
+![Example of 1 card layout](./readme-images/1-card-layout.png)
+![Example of 2 card layout](./readme-images/2-card-layout.png)
+![Example of 3 card layout](./readme-images/3-card-layout.png)
+![Example of 4 card layout](./readme-images/4-card-layout.png)
