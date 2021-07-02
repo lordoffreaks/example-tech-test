@@ -37,7 +37,7 @@ yarn test
 
 ### Functionality 🤖
 
-- Fetch from the API using getServerSideProps
+- Fetch all results from the API using getServerSideProps
 - Render results with 12 per page
 - Pagination should update displayed results
 
