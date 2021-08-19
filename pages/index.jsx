@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 import styled from "styled-components";
 import { Card, Pagination } from "../components";
 import styles from "../styles/home.module.css";
@@ -9,9 +10,9 @@ const Main = styled.main`
   padding: 10px;
 `;
 
-export default function Home({
-  results: [{ id, name, description, price, image }],
-}) {
+export default function Home({ results }) {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
   return (
     <div className={styles.wrapper}>
       <Head>
@@ -22,14 +23,18 @@ export default function Home({
 
       <Main>
         <h1>Live Pairing Tech Test</h1>
-        <Card
-          id={id}
-          name={name}
-          description={description}
-          price={price}
-          image={image}
-        />
-        <Pagination currentPage={5} totalPages={10} />
+
+        {results.map(({ id, name, description, price, image }) => (
+          <Card
+            id={id}
+            name={name}
+            description={description}
+            price={price}
+            image={image}
+          />
+        ))}
+
+        <Pagination currentPage={currentPage} totalPages={totalPages} />
       </Main>
     </div>
   );
@@ -48,6 +53,13 @@ export async function getServerSideProps() {
           price: "860.00",
           image: "http://placeimg.com/640/480/cats",
           id: "123",
+        },
+        {
+          id: "24523",
+          name: "Gorgeous Wooden Chicken",
+          description:
+            "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+          image: "http://placeimg.com/640/480/nightlife",
         },
       ],
     },
