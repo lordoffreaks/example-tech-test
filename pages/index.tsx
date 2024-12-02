@@ -3,6 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Card, Pagination } from "../components";
 import styles from "../styles/home.module.css";
+import { Product } from "types/types";
 
 const Main = styled.main`
   max-width: 1200px;
@@ -10,7 +11,11 @@ const Main = styled.main`
   padding: 10px;
 `;
 
-export default function Home({ results }) {
+interface HomeProps {
+  results: Product[];
+}
+
+export default function Home({ results }: HomeProps) {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   return (

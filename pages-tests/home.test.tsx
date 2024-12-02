@@ -1,12 +1,13 @@
 import { render } from "@testing-library/react";
 import { setupServer } from "msw/node";
-import { rest } from "msw";
+import { http, HttpResponse } from "msw";
 import Home, { getServerSideProps } from "../pages";
+import { Product } from "types/types";
 
 describe("Home Page", () => {
   describe("Page Component", () => {
     it("should render", () => {
-      const props = {
+      const product: Product = {
         name: "Product Name",
         description: "This is a product",
         price: "200",
@@ -14,24 +15,22 @@ describe("Home Page", () => {
         id: "38463",
       };
 
-      const { baseElement } = render(<Home results={[{ ...props }]} />);
+      const { baseElement } = render(<Home results={[product]} />);
       expect(baseElement).toBeTruthy();
     });
   });
 
   describe("getServerSideProps", () => {
     const server = setupServer(
-      rest.get("http://localhost:3000/api/product", async (req, res, ctx) => {
-        return res(
-          ctx.json(
-            [...Array(25)].map((_, index) => ({
-              name: `Product Name ${index + 1}`,
-              description: "This is a product",
-              price: "200",
-              image: "https://example.com/image",
-              id: `${38463 + index}`,
-            }))
-          )
+      http.get("http://localhost:3000/api/product", async () => {
+        return HttpResponse.json(
+          [...Array(25)].map((_, index) => ({
+            name: `Product Name ${index + 1}`,
+            description: "This is a product",
+            price: "200",
+            image: "https://example.com/image",
+            id: `${38463 + index}`,
+          }))
         );
       })
     );

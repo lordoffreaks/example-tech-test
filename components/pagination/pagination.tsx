@@ -1,4 +1,9 @@
-export function Pagination({ currentPage, totalPages }) {
+interface PaginationProps {
+  currentPage: number;
+  totalPages: number;
+}
+
+export function Pagination({ currentPage, totalPages }: PaginationProps) {
   return (
     <nav aria-label="Pagination">
       <ul>
