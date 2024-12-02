@@ -1,5 +1,10 @@
 # ✨ Live Pairing Tech Test ✨
 
+## Minimun Requirements 📣
+
+- Node 20
+- Your favourite IDE
+
 ## Intro 📣
 
 - Test is 50 Min's Long
@@ -25,17 +30,17 @@ We will be looking out for:
 Get the dev environment up and running!
 
 ```bash
-yarn install --frozen-lockfile
+npm ci
 ```
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Might also be a good idea to start watching the tests!
 
 ```bash
-yarn test
+npm run test
 ```
 
 ## Block 1 (Styling) - 25m
@@ -76,8 +81,11 @@ yarn test
 Find below an example of the resulting grids based on different screen sizes.
 
 ![Example of 1 card layout](./readme-images/1-card-layout.png)
+
 ![Example of 2 card layout](./readme-images/2-card-layout.png)
+
 ![Example of 3 card layout](./readme-images/3-card-layout.png)
+
 ![Example of 4 card layout](./readme-images/4-card-layout.png)
 
 #### Pagination
@@ -91,6 +99,6 @@ Pagination with `<` & `>` added and styled to buttons.
 ### Functionality 🤖
 
 - Fetch all results from the API using getServerSideProps
-- The API always returns 25 results you don't need to do multiple requests, the paginations needs to be done in-memory
+- The API always returns 25 results you don't need to do multiple requests, the pagination needs to be done in-memory
 - Render results with 12 per page
 - Pagination should update displayed results
