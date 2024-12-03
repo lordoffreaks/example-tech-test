@@ -75,7 +75,7 @@ npm run test
 #### Responsive Layout / Grid
 
 - Achieve a responsive layout with **up to 4 cards** showing at 1200px width.
-- Each card should get **no smaller than 260px** and **no bigger than 600px**.
+- Each card should get **no smaller than 260px**.
 - Spacing is 10px
 
 Find below an example of the resulting grids based on different screen sizes.
