@@ -102,3 +102,8 @@ Pagination with `<` & `>` added and styled to buttons.
 - The API always returns 25 results you don't need to do multiple requests, the pagination needs to be done in-memory
 - Render results with 12 per page
 - Pagination should update displayed results
+
+
+### Testing 🤖
+
+- Ensure all tests are passing and try to obtain a 100% coverage with the modifications you have done in the previous step
