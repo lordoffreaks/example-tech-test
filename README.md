@@ -7,7 +7,7 @@
 
 ## Intro 📣
 
-- Test is 50 Min's Long
+- Test is 60 Min's Long
 - **You don't need to finish everything**
 - Work how you normally would
   - Use google/documentation
@@ -19,6 +19,7 @@ We know you are good 😉, **relax and have fun!!!**, we are here to help! 🎉
 
 - Style as per the spec below the list of cards (Block 1 - 25m).
 - Implement pagination based off the results from an API (Block 2 - 25m).
+- Test implementation (Block 3 - 10m).
 
 We will be looking out for:
 
@@ -35,12 +36,6 @@ npm ci
 
 ```bash
 npm run dev
-```
-
-Might also be a good idea to start watching the tests!
-
-```bash
-npm run test
 ```
 
 ## Block 1 (Styling) - 25m
@@ -88,7 +83,7 @@ Find below an example of the resulting grids based on different screen sizes.
 
 ![Example of 4 card layout](./readme-images/4-card-layout.png)
 
-#### Pagination
+#### Pagination (Optional, only if you have time enough)
 
 Pagination with `<` & `>` added and styled to buttons.
 
@@ -102,3 +97,16 @@ Pagination with `<` & `>` added and styled to buttons.
 - The API always returns 25 results you don't need to do multiple requests, the pagination needs to be done in-memory
 - Render results with 12 per page
 - Pagination should update displayed results
+
+
+## Block 3 (Testing) - 25m
+
+### Functionality 🤖
+
+Run
+
+```bash
+npm run test
+```
+
+Let's make sure everything is green
