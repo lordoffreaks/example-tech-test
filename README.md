@@ -17,9 +17,9 @@ We know you are good 😉, **relax and have fun!!!**, we are here to help! 🎉
 
 ## Goal 🏁
 
-- Style as per the spec below the list of cards (Block 1 - 25m).
+- Style as per the spec below the list of cards (Block 1 - 20m).
 - Implement pagination based off the results from an API (Block 2 - 25m).
-- Test implementation (Block 3 - 10m).
+- Test implementation (Block 3 - 15m).
 
 We will be looking out for:
 
@@ -38,7 +38,7 @@ npm ci
 npm run dev
 ```
 
-## Block 1 (Styling) - 25m
+## Block 1 (Styling) - 20m
 
 **Please use styled-components and CSS grid**
 
@@ -49,23 +49,28 @@ npm run dev
 ![Example of Card](./readme-images/card-example.png)
 
 - Card:
-  - All padding/margin seen is `10px`
-  - Border Radius is `10px`
-  - Box shadow `0px 0px 15px -2px #e0e0e0`
+  - padding: 10px;
+  - margin: 10px;
+  - border-radius: 10px;
+  - box-shadow: 0px 0px 15px -2px #e0e0e0;
 - Image:
-  - Height is `200px`
-  - Full width.
+  - height: 200px;
+  - Full width
 - Title
-  - font-family `sans-serif`
-  - font-size `1.3rem`
-  - font-weight `bold`
+  - font-family: sans-serif;
+  - font-size: 1.3rem;
+  - font-weight: bold;
 - Description
-  - font-family `serif`
-  - font-size `1.1rem`
+  - font-family: serif;
+  - font-size: 1.1rem;
 - Price
-  - font-family `fantasy`
-  - font-size `1rem`
-  - underline color is `rebeccapurple`
+  - Prepended with the "Price" word
+    - ONLY when a price value is available.
+  - font-family: fantasy;
+  - font-size: 1rem;
+  - Underlined
+    - Underline thickness 3px
+    - Underline color is rebeccapurple
 
 #### Responsive Layout / Grid
 
@@ -98,8 +103,7 @@ Pagination with `<` & `>` added and styled to buttons.
 - Render results with 12 per page
 - Pagination should update displayed results
 
-
-## Block 3 (Testing) - 25m
+## Block 3 (Testing) - 15m
 
 ### Functionality 🤖
 
