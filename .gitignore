@@ -1,37 +1,55 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#
+# Monorepo: legacy app at repo root + exercises/auction-calendar + exercises/auction-lots
+# Patterns without a leading slash apply in any directory.
 
 # dependencies
-/node_modules
-/.swc
-/.pnp
+node_modules/
+.pnp
 .pnp.js
 .yarn/install-state.gz
 
+# next.js (root and exercises/*)
+.next/
+out/
+build/
+dist/
+
+# turbopack / swc
+.swc/
+.turbo/
+
 # testing
-/coverage
+coverage/
+.nyc_output/
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
+# production / caches
+*.tsbuildinfo
 
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
 .vercel
+.vercel/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# IDE (optional local editor settings)
+.idea/
+*.swp
+*.swo
+
+# OS
+.AppleDouble
+.LSOverride
